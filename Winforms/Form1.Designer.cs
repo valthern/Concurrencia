@@ -32,12 +32,14 @@ namespace Winforms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnIniciar = new System.Windows.Forms.Button();
             this.loadingGIF = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtInput = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.loadingGIF)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(12, 12);
+            this.btnIniciar.Location = new System.Drawing.Point(12, 60);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(110, 23);
             this.btnIniciar.TabIndex = 0;
@@ -48,7 +50,7 @@ namespace Winforms
             // loadingGIF
             // 
             this.loadingGIF.Image = ((System.Drawing.Image)(resources.GetObject("loadingGIF.Image")));
-            this.loadingGIF.Location = new System.Drawing.Point(12, 41);
+            this.loadingGIF.Location = new System.Drawing.Point(12, 89);
             this.loadingGIF.Name = "loadingGIF";
             this.loadingGIF.Size = new System.Drawing.Size(287, 279);
             this.loadingGIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -56,17 +58,36 @@ namespace Winforms
             this.loadingGIF.TabStop = false;
             this.loadingGIF.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombre";
+            // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(70, 9);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(100, 20);
+            this.txtInput.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.loadingGIF);
             this.Controls.Add(this.btnIniciar);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.loadingGIF)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -74,6 +95,8 @@ namespace Winforms
 
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.PictureBox loadingGIF;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtInput;
     }
 }
 
