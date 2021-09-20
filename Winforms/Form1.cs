@@ -29,13 +29,23 @@ namespace Winforms
             loadingGIF.Visible = true;
             await Esperar();
             var nombre = txtInput.Text;
-            MessageBox.Show("Pasaron los 5 segundos");
+            var saludo = await ObtenerSaludo(nombre);
+            MessageBox.Show(saludo);
             loadingGIF.Visible = false;
         }
 
         private async Task Esperar()
         {
             await Task.Delay(TimeSpan.FromSeconds(5));
+        }
+
+        private async Task<string> ObtenerSaludo(string nombre)
+        {
+            using (var respuesta = await httpClient.GetAsync($"{apiURL}/saludos/{nombre}"))
+            {
+                var saludo = await respuesta.Content.ReadAsStringAsync();
+                return saludo;
+            }
         }
     }
 }
