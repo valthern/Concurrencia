@@ -8,3 +8,6 @@ C:\Users\Omar\source\repos\Concurrencia\Winforms\obj\Debug\Winforms.csproj.Gener
 C:\Users\Omar\source\repos\Concurrencia\Winforms\obj\Debug\Winforms.csproj.CoreCompileInputs.cache
 C:\Users\Omar\source\repos\Concurrencia\Winforms\obj\Debug\Winforms.exe
 C:\Users\Omar\source\repos\Concurrencia\Winforms\obj\Debug\Winforms.pdb
+C:\Users\Omar\source\repos\Concurrencia\Winforms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Omar\source\repos\Concurrencia\Winforms\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Omar\source\repos\Concurrencia\Winforms\obj\Debug\Winforms.csproj.CopyComplete
